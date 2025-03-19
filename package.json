@@ -1,0 +1,74 @@
+{
+  "name": "academic-tracker",
+  "version": "1.0.0",
+  "description": "Academic Tracker é um sistema de gerência para frequência acadêmica. Com uma interface intuitiva, ele permite que alunos registrem sua presença de forma eficiente e segura.",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/server.ts",
+    "start": "tsc & node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:studio": "npx prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oiurisoares/Academic-Tracker.git"
+  },
+  "keywords": [
+    "API",
+    "BackEnd",
+    "Express",
+    "MySQL",
+    "NodeJs",
+    "Prisma",
+    "TypeScript"
+  ],
+  "author": "@oiurisoares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dashmedTelehealth/DashMed-BackEnd/issues"
+  },
+  "homepage": "https://github.com/dashmedTelehealth/DashMed-BackEnd#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "fs-extra": "^11.2.0",
+    "geoip-lite": "^1.4.10",
+    "helmet": "^8.0.0",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.3",
+    "nodemailer": "^6.9.16",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@prisma/client": "^6.0.1",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/geoip-lite": "^1.4.4",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.7.5",
+    "@types/nodemailer": "^6.4.17",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "prisma": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "twilio": "^5.3.6",
+    "typescript": "^5.7.3"
+  }
+}

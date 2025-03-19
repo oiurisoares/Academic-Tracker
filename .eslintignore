@@ -1,0 +1,28 @@
+# Ignore the build directory where compiled files are placed
+dist/
+
+# Ignore the node_modules directory where dependencies are stored
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore the tests directory if you do not want to lint test files
+tests/
+
+# Ignore Prisma migration directory
+src/prisma/migrations/
+
+# Ignore specific configuration files if necessary
+*.config.js
+*.config.ts
+
+# Ignore example files or directories if applicable
+examples/
+
+# Ignore TypeScript configuration file
+tsconfig.json
