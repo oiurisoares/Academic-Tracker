@@ -1,0 +1,23 @@
+model College {
+    accreditation String       @unique
+    address       String
+    cnpj          String       @unique
+    createdAt     DateTime?    @default(now())
+    establishedAt DateTime?
+    id            String       @id @default(uuid())
+    isActive      Boolean?     @default(true)
+    name          String       @db.TinyText
+    phone         String?
+    photo         String?      @db.TinyText
+    token         String?
+    type          CollegeType? @default(PUBLIC)
+    updatedAt     DateTime?    @updatedAt
+    website       String?
+}
+
+enum CollegeType {
+    COMMUNITY
+    PRIVATE
+    PUBLIC
+    TECHNICAL
+}
