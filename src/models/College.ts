@@ -1,9 +1,12 @@
 import { CollegeType } from '@prisma/client';
+import { Course } from './Course';
 
 export interface College {
     accreditation: string;
     address: string;
     cnpj: string;
+    course?: Course[];
+    courseCount: number;
     createdAt?: Date | null;
     establishedAt?: Date | null;
     id: string;
@@ -19,6 +22,7 @@ export interface College {
 
 export type CollegeIdentifier = Pick<College,
     'accreditation' |
+    'courseCount' |
     'cnpj' |
     'id' |
     'isActive' |

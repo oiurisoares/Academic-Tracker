@@ -1,0 +1,13 @@
+model Course {
+    code        String    @db.TinyText
+    college     College   @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+    collegeId   String
+    coordinator String    @db.TinyText
+    createdAt   DateTime? @default(now())
+    duration    Float
+    id          String    @id @default(uuid())
+    isActive    Boolean   @default(true)
+    isConcluded Boolean   @default(false)
+    name        String    @db.TinyText
+    updatedAt   DateTime? @updatedAt
+}

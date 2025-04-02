@@ -2,6 +2,8 @@ model College {
     accreditation String       @unique
     address       String
     cnpj          String       @unique
+    course        Course[]
+    courseCount   Int          @default(0)
     createdAt     DateTime?    @default(now())
     establishedAt DateTime?
     id            String       @id @default(uuid())
